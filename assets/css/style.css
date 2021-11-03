@@ -1,4 +1,33 @@
 
+.card {
+    background-color: #242526;
+}
+
+.text-themed , .text-themed:hover {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Navbar */
+.navbar{
+    margin-top: 20px;
+    position: absolute;
+    z-index: 999;
+    border-radius: 30px;
+    top: 2%;
+    left: 0;
+    right: 0;
+    background-color: black!important;
+    box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
+}
+
+.navbar .navbar-nav a{
+     color: white!important;
+}
+
+.navbar a.navbar-brand{
+    color: white!important;
+}
+
 /* Header */
 
 #particles-js {
@@ -10,6 +39,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 
 
@@ -200,6 +230,17 @@ section .about{
 
 /* Projects */
 
+section#projects{
+    background-image: url('../img/projects-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#projects{
+    padding-top: 1px;
+    margin-bottom: 2rem;
+}
+
 .user-projects {
     margin: 20px auto;
 }
@@ -209,21 +250,269 @@ section .about{
     text-decoration: none !important;
     margin: 20px auto;
     transition: transform 400ms;
-    cursor: pointer;
+    
+}
+
+#project-desc{
+    padding-right: 5rem;
 }
 
 .project-image {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 12px;
+    margin-left: -120px;
+    margin-top:-10px;
+    object-fit: cover;
 }
-.card {
-    background-color: #242526;
-}
-
-.text-themed , .text-themed:hover {
-    color: rgba(255,255,255,0.9);
-}
-
 .project.card:hover:not(.post) {
     transform: translateY(-8px);
     box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
 }
+
+#project-tools .badge:hover:not(.post) {
+    transform: scale(0.95);
+    box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
+    background-color: #007bff;
+    color: #17191a!important;
+}
+
+#project-tools .badge{
+    transition: transform 400ms;
+}
+
+#project-buttons{
+    margin-top:2.7rem;
+}
+
+#project-buttons button{
+    border-radius: 6px;
+    margin-right: 0.5rem;
+}
+
+
+#project-buttons button:hover:not(.post) {
+    transform: scale(0.95);
+    box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
+    
+}
+
+#project-buttons button{
+    transition: transform .5s;
+}
+
+
+/* #project-name:hover{
+    text-decoration: underline;
+    transition: 2s;
+    cursor: pointer;
+} */
+
+#project-name:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#project-name:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+/* Blog */
+
+section#blog{
+    background-image: url('../img/blog-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#blog{
+    padding-top: 1px;
+    margin-bottom: 2rem;
+}
+
+.blogcard {
+  background-color: #242526;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 365px;
+  margin-bottom: 1rem;
+}
+.blogcard-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.blogcard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.blogcard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 940px;
+  margin: auto;
+}
+
+
+.tag {
+
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+
+.blogcard-body h4 {
+  margin: 10px 0;
+}
+.blogcard-body p {
+  font-size: 14px;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+}
+.blogcard .user {
+  display: flex;
+  margin-top: auto;
+}
+.blogcard .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.blogcard .user-info h5 {
+  margin: 0;
+}
+.blogcard .user-info small {
+  color: #888785;
+}
+.tag:hover{
+    transform: scale(0.94);
+    cursor: pointer;
+    box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
+    background-color: #007bff;
+    color: #17191a!important;
+}
+
+.tag{
+    transition: 0.7s;
+}
+@media (max-width: 940px) {
+  .blogcard-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+
+/* BlogCard */
+
+.blogcard{
+    transition: 800ms;
+}
+
+.blogcard:hover:not(.post) {
+    transform: translateY(-8px);
+    box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
+}
+
+
+
+/* Contact */
+
+section#contact{
+    background-image: url('../img/contact-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+#contact{
+    padding-top: 1px;
+    margin-bottom: 2rem;
+}
+
+
+#contact .form{
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative;
+    height: 600px;
+}
+
+#contact h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:white;
+    border-bottom:3px solid #8787a0
+}
+
+#contact input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+    color: white!important;
+}
+
+#contact input:focus{
+    border-bottom:2px solid white;
+}
+
+#contact p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:white;
+}
+
+#contact button{
+    border-radius: 12px;
+    transition:700ms;
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:white;
+    cursor:pointer;
+    transition:all .3s}
+
+    #contact button:hover{
+    background:#212529;
+    color:#fff;
+}
+
+#contact span{
+    margin:0 5px 0 15px;
+}
+
+
+.bot{content:'Hi';position:absolute;bottom:-15px;right:-20px;background:#50505a;color:#fff;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
+span{margin:0 5px 0 15px}
