@@ -25,6 +25,7 @@ html {
 
 .navbar-brand{
     align-content: center;
+    position: relative;
 }
 .navbar .navbar-nav a{
      color: white!important;
@@ -57,6 +58,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    padding-top: 6em;
 }
 
 
@@ -229,10 +231,9 @@ footer {
         padding-top: 6em;
     }
 
-    .project-image-mobile-section{
-       
-    }
+    
 }
+
 
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -247,7 +248,9 @@ footer {
         font-size: 40px;
     }
 
-    
+    .header{
+        margin-top: 40px;
+    }
     .header-links .link {
         font-size: 20px;
     } }
@@ -608,23 +611,24 @@ span{margin:0 5px 0 15px}
 
 
 /* Chains */
-.chains{
-    position: absolute;
+.navbar{
     z-index: 999;
 }
-
 .chain1, .chain2{
     color: #fff;
     height: 60px;
-    z-index: 99999;
+    z-index: -999!important;
     margin-top: 2px;
     justify-content: space-between;
+    position: absolute;
+    bottom: 97%;
+    
 }
 
 .chain1{
-   
+   right: 5%;
 }
 
 .chain2{
-     left:32%;
+    left: 5%;
 }
