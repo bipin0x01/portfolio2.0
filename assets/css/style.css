@@ -281,12 +281,26 @@ footer {
 }
 
 .project-image-mobile-section .project-image-mobile{
+    height: 180px;
+    width: 300px;
     border-radius: 8px;
     padding: 0px!important;
-    margin-bottom: -100px;
     z-index: 999;
+    position: absolute;
+    right: 8%;
 }
 
+.project.card{
+    height: 420px;
+}
+
+.project.card div.text-themed{
+    margin-top: 140px;
+}
+
+.projectcard-footer{
+    display: block;
+}
  }
 /* // Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) { 
