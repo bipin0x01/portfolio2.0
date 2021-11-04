@@ -198,7 +198,8 @@ footer {
 /* Responsiveness */
 
 
-@media only screen and (min-width: 550px){
+/* // Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) { 
     /* Header */
     .header .site-title {
     margin: 0;
@@ -212,10 +213,22 @@ footer {
     
     .header-links .link {
         font-size: 20px;
-    }
+    } }
 
-}
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
 
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+    
+ }
 
 /* About */
 section .about{
