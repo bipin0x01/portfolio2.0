@@ -54,3 +54,9 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+
+
+particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
