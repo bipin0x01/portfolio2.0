@@ -16,16 +16,30 @@
     top: 2%;
     left: 0;
     right: 0;
-    background-color: black!important;
+    background-color: #343a40!important;
     box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
 }
 
+.navbar-brand{
+    align-content: center;
+}
 .navbar .navbar-nav a{
      color: white!important;
 }
 
 .navbar a.navbar-brand{
     color: white!important;
+}
+.navbar .nav-link{
+    transition: 500ms;
+         font-weight: 600;
+}
+.navbar .nav-link:hover{
+     color: #007bff!important;
+     transition: 500ms;
+     text-shadow: #242526;
+
+     transform: scale(0.96);
 }
 
 /* Header */
@@ -135,8 +149,15 @@ audio, canvas, video {
 
 /* Footer */
 
+section#footer{
+    background-image: url(../img/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
 footer {
-    background: #17191a;
+    color: white;
 }
 
 
@@ -217,7 +238,7 @@ footer {
 
 /* // Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
-
+    /*  */
  }
 
 /* // Large devices (desktops, 992px and up) */
@@ -227,7 +248,7 @@ footer {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { 
-    
+
  }
 
 /* About */
@@ -353,7 +374,6 @@ section#blog{
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 365px;
   margin-bottom: 1rem;
 }
 .blogcard-header img {
@@ -478,7 +498,7 @@ section#contact{
     border-bottom:3px solid #8787a0
 }
 
-#contact input{
+#contact input, #contact textarea{
     width:100%;
     padding:10px;
     box-sizing:border-box;
