@@ -75,6 +75,7 @@
     display: block;
     line-height: 1;
     color: #fff;
+    width: 100%;
 }
 
 .header .site-description {
@@ -218,6 +219,18 @@ footer {
 
 /* Responsiveness */
 
+/* // Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) { 
+    /* Header */
+    #particles-js{
+        padding-top: 6em;
+    }
+
+    .project-image-mobile-section{
+       
+    }
+}
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) { 
@@ -239,8 +252,36 @@ footer {
 /* // Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
     /*  */
+    .project-image{
+        margin-left: -120px;
+    margin-top:-10px;
+    height:220px;
+    width:350px;
+}
+
+    #project-desc{
+        padding-right:6rem;
+    }
+
  }
 
+ @media only screen and (max-width: 768px) { 
+.project-image{
+    display: none;
+}
+
+.project-image-mobile-section{
+    display: block!important;
+}
+
+.project-image-mobile-section .project-image-mobile{
+    border-radius: 8px;
+    padding: 0px!important;
+    margin-bottom: -100px;
+    z-index: 999;
+}
+
+ }
 /* // Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) { 
 
@@ -248,6 +289,16 @@ footer {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { 
+.project-image{
+        margin-left: -120px;
+    margin-top:-10px;
+    height: 200px;
+    width: 320px;
+}
+
+#project-desc{
+    padding-right: 5rem;
+}
 
  }
 
@@ -287,14 +338,8 @@ section#projects{
     
 }
 
-#project-desc{
-    padding-right: 5rem;
-}
-
 .project-image {
     border-radius: 12px;
-    margin-left: -120px;
-    margin-top:-10px;
     object-fit: cover;
 }
 .project.card:hover:not(.post) {
@@ -333,12 +378,9 @@ section#projects{
     transition: transform .5s;
 }
 
-
-/* #project-name:hover{
-    text-decoration: underline;
-    transition: 2s;
-    cursor: pointer;
-} */
+.projectcard-footer.row{
+    margin: auto;
+}
 
 #project-name:after {    
   background: none repeat scroll 0 0 transparent;
@@ -549,3 +591,37 @@ section#contact{
 
 .bot{content:'Hi';position:absolute;bottom:-15px;right:-20px;background:#50505a;color:#fff;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
 span{margin:0 5px 0 15px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chains */
+.chains{
+    position: absolute;
+    z-index: 999;
+}
+
+.chain1, .chain2{
+    color: #fff;
+    height: 60px;
+    z-index: 99999;
+    margin-top: 2px;
+    justify-content: space-between;
+}
+
+.chain1{
+   
+}
+
+.chain2{
+     left:32%;
+}
