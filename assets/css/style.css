@@ -650,4 +650,6 @@ span{margin:0 5px 0 15px}
 
 .navbar{
     position: fixed;
+   box-shadow: -4px 6px 50px 10px black;
+   opacity: 0.8;
 }
