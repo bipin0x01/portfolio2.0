@@ -378,8 +378,9 @@ section#projects{
     transition: transform 400ms;
 }
 
+
 #project-buttons{
-    margin-top:2.7rem;
+    align-self: center;
 }
 
 #project-buttons button{
@@ -399,7 +400,7 @@ section#projects{
 }
 
 .projectcard-footer.row{
-    margin: auto;
+    margin: 5px;
 }
 
 #project-name:after {    
@@ -646,3 +647,4 @@ span{margin:0 5px 0 15px}
 .chain2{
     left: 5%;
 }
+
