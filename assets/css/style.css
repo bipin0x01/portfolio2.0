@@ -669,3 +669,10 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 0.5px solid slategrey;
 }
+
+
+/* Tools Section */
+
+#tools{
+    background-color: #1a222c!important;
+}
