@@ -112,7 +112,7 @@ html {
 
 .down {
     position: absolute;
-    bottom: 25px;
+    bottom: 100px;
     width: 100%;
     margin: 0 auto;
     display: block;
@@ -652,4 +652,20 @@ span{margin:0 5px 0 15px}
     position: fixed;
    box-shadow: -4px 6px 50px 10px black;
    opacity: 0.8;
+}
+
+
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0.5px solid slategrey;
 }
