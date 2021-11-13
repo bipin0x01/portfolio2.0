@@ -21,6 +21,7 @@ html {
     right: 0;
     background-color: #343a40!important;
     box-shadow: -2px 8px 40px -12px rgb(0 0 0 / 24%);
+    position: fixed;
 }
 
 .navbar-brand{
@@ -693,5 +694,21 @@ body::-webkit-scrollbar-thumb {
     left: 30px;
     right: 20px;
     bottom: 70px;
+    opacity: 0.5;
+}
+
+
+.toolslogo.depth2{
+     top: 60px;
+    left: 30px;
+    right: 10px;
+    bottom: 70px;
+    opacity: 0.5;
+}
+
+.toolslogo.depth3{
+     top: 90px;
+    left: 20px;
+    right: 40px;
     opacity: 0.5;
 }
