@@ -264,6 +264,7 @@ footer {
     margin-top:-10px;
     height:220px;
     width:350px;
+
 }
 
     #project-desc{
@@ -360,7 +361,7 @@ section#projects{
 }
 
 .project-image {
-    border-radius: 12px;
+    border-radius: 12px 12px 12px 0px;
     object-fit: cover;
 }
 .project.card:hover:not(.post) {
