@@ -167,6 +167,10 @@ footer {
     color: white;
 }
 
+footer>small{
+    opacity: 0.5;
+}
+
 
 /* Timeline */
 .bg-themed {
