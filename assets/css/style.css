@@ -676,10 +676,39 @@ body::-webkit-scrollbar-thumb {
 #tools{
     background-color: #1a222c!important;
     height: 400px;
-    overflow: hidden;   
+    overflow: hidden;  
 }
 
 .toolslogo>div>img{
-    height: 60px;
+    height: 120px;
     width: auto;
+    margin: 32px;
+}
+
+.toolslogo{
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.toolslogo-bg{
+    
+    opacity: 0.35;
+    transform: translate3d(0%, -290px, 0px);
+    display: grid;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #8787a0;
+}
+
+.toolslogo-bg>span{
+    text-shadow: -2px 2px 4px black;
+    
+}
+
+.toolslogo-bg>span>p{
+    position: absolute;
+    z-index: 0;
 }
