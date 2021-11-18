@@ -686,6 +686,9 @@ body::-webkit-scrollbar-thumb {
 
 .toolslogo>div>img{
     margin: 32px;
+    height: 100px;
+    width: auto;
+
 }
 
 .toolslogo{
