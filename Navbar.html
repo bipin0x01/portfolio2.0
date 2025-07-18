@@ -1,31 +1,53 @@
-<nav class="container navbar navbar-expand-lg navbar-themed">
-            <img class="chain1" src="./assets/img/chians.svg" alt="">
-            
-    <a class="navbar-brand ml-4 mt-1  data-tilt" href="#">
-        <h5><b><img src="./assets/img/favicon.ico" alt="Logo" height="28px" width="auto"></b></h5>
-    </a>
-
-    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-1x fa-bars text-themed"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link " href="#about">About</a>
-
-            <a class="nav-item nav-link " href="#skills">Skills</a>
-
-            <a class="nav-item nav-link " href="#projects">Projects</a>
-
-            <a class="nav-item nav-link " href="#blog">Blog</a>
-
-            <a class="nav-item nav-link " href="#contact">Contact</a>
-            
-            <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+<nav class="navbar navbar-expand-lg modern-navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">
+            <a href="#" class="brand-link">
+                <span class="brand-text">Bipin Thapa</span>
+            </a>
         </div>
-        
-    </div>
-    <img class="chain2" src="./assets/img/chians.svg" alt="">
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#about">
+                    <span>About</span>
+                </a>
+                <a class="nav-link" href="#skills">
+                    <span>Skills</span>
+                </a>
+                <a class="nav-link" href="#projects">
+                    <span>Projects</span>
+                </a>
+                <a class="nav-link" href="#blog">
+                    <span>Blog</span>
+                </a>
+                <a class="nav-link" href="#contact">
+                    <span>Contact</span>
+                </a>
+                
+                <div class="nav-actions">
+                    <button class="view-toggle" id="viewToggle">
+                        <i class="fas fa-file-alt toggle-icon"></i>
+                        <span class="toggle-text">Resume</span>
+                        <i class="fas fa-laptop-code toggle-icon"></i>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#contact" class="cta-button">
+                        <span>Hire Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </nav>
